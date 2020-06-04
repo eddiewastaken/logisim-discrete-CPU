@@ -4,7 +4,7 @@ This project aims to mimic [Ben Eater's 8-Bit CPU Project](https://eater.net/8bi
 
 As Logisim doesn't support [VHDL](https://en.wikipedia.org/wiki/VHDL) modelling of components, each individual component and IC used by Ben has been built purely from discrete logic using Logisim's inbuilt logic gates, tri-state buffers, inputs and outputs.
 
-The discrete implementations have been carefully designed to mirror the near exact operation of the corresponding ICs, to allow physical breadboarding and construction if desired. Most are based on the 7400 Series, as used by Ben.
+The discrete implementations have been carefully designed to mirror the near exact operation of the corresponding ICs, to allow physical breadboarding and construction if desired. Most are based on the 7400 Series, as used by Ben. The `CPU.circ` file is intended to be loaded by [Logisim Evolution](https://github.com/reds-heig/logisim-evolution), as it uses push buttons and a couple of other features not found in the original Logisim program.
 
 The pseudo-[28C16](http://cva.stanford.edu/classes/cs99s/datasheets/at28c16.pdf) (2K x 8-Bit ROM) used for the control logic (and output register display driver) is an exception to the discrete logic designs, due to its size. **Note** - The Control Logic ROM is pre-loaded with the correct microinstructions for the CPU, which mirrors the list of Ben Eater's (and uses the same microinstructions to achieve them). These are provided in `CPU Instructions.txt`. Logisim's ROM component is used instead, which is handy in allowing the loading of ROM image files. 
 
