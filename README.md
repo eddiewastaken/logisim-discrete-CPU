@@ -1,5 +1,7 @@
 # logisim-discrete-CPU
 
+![The CPU](https://i.imgur.com/aIL39s7.png)
+
 This project aims to mimic [Ben Eater's 8-Bit CPU Project](https://eater.net/8bit), in the Digital Logic Simulator [Logisim Evolution](https://github.com/reds-heig/logisim-evolution). 
 
 As Logisim doesn't support [VHDL](https://en.wikipedia.org/wiki/VHDL) modelling of components, each individual component and IC used by Ben has been built purely from discrete logic using Logisim's inbuilt logic gates, tri-state buffers, inputs and outputs.
