@@ -1,0 +1,18 @@
+Opcode  Mnemonic  Description
+------  --------  -----------
+0000    NOP	      No operation
+0001    LDA	      Load A reg with contents of given address
+0010    ADD	      Add contents of given address to A reg
+0011    SUB	      Subtract contents of given address from A reg
+0100    STA	      Store contents of A reg at given address
+0101    LDI	      Load A reg with given value
+0110    JMP	      Jump to given address
+0111    JC	      Jump to given address is Carry Flag is set
+1000    JZ	      Jump to given address is Zero Flag is set
+1001    N/A	      N/A
+1010    N/A	      N/A
+1011    N/A	      N/A
+1100    N/A	      N/A
+1101    N/A	      N/A
+1110    OUT	      Load Out reg with contents of A reg
+1111    HLT	      Halt the clock
