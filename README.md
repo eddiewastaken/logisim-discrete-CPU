@@ -47,3 +47,4 @@ The idea of this project is to present a full guide to build up to this project 
  - Full build guide for educators and hobbyist (in the works!)
  - Fix `HLT` microinstruction, as Logisim currently doesn't play nice with it
  - Implement an optional Clock cycle saving subcircuit to skip to the Instruction if the current control word == 0
+ - Split the subcircuits into a Logisim library to be loaded inside other Logisim circuits
