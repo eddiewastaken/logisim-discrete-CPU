@@ -4,6 +4,8 @@
 
 This project aims to mimic [Ben Eater's 8-Bit CPU Project](https://eater.net/8bit), in the Digital Logic Simulator [Logisim Evolution](https://github.com/reds-heig/logisim-evolution). 
 
+A full writeup/guide to replicate this project yourself from scratch may be found in the `CPU v1.XX.pdf` file in the root of this repository.
+
 As Logisim doesn't support [VHDL](https://en.wikipedia.org/wiki/VHDL) modelling of components, each individual component and IC used by Ben has been built purely from discrete logic using Logisim's inbuilt logic gates, tri-state buffers, inputs and outputs.
 
 The discrete implementations have been carefully designed to mirror the near exact operation of the corresponding ICs, to allow physical breadboarding and construction if desired. Most are based on the 7400 Series, as used by Ben. The `CPU.circ` file is intended to be loaded by [Logisim Evolution](https://github.com/reds-heig/logisim-evolution), as it uses push buttons and a couple of other features not found in the original Logisim program.
@@ -38,15 +40,14 @@ This can be repeated until all desired RAM locations are filled with instruction
 
 ![Activating automatic Clock ticks](https://i.imgur.com/7l080oo.png)
 
-'Tick Frequency' can also be altered, results may vary depending on your machine. Included in this project is a demo ROM image file, `Fib.ROM`, which computes the Fibonacci sequence from 0 to 233, then loops. `7Seg.ROM` and `BinaryToBCD.ROM` files are also included, which are pre-loaded into the ROMs used as the output display drivers.
+'Tick Frequency' can also be altered, results may vary depending on your machine. Included in this project is a demo ROM image file, `Fib.ROM`, which computes the Fibonacci sequence from 0 to 233, then loops. `7Seg.ROM` and `BinaryToBCD.ROM` files are also included, which are pre-loaded into the ROMs used as the output display drivers. `controlROM.py` will generate the required control ROM file based on the microinstructions given within.
 
 ## Aims
 
-The idea of this project is to present a full guide to build up to this project yourself, starting with only basic digital logic circuit knowledge. Please log any issues, and let me know if you'd like to use this project (and eventual build manual) for anything cool! Forks are welcomed to build on and expand this system to bigger and better things, but it's encouraged to use as much discrete logic as possible! 
+The idea of this project is to present a full guide to build up to this project yourself, starting with only basic digital logic circuit knowledge. Please log any issues, and let me know if you'd like to use this project and/or build manual for anything cool! Forks are welcomed to build on and expand this system to bigger and better things, but it's encouraged to use as much discrete logic as possible! 
 
 # Todo
 
- - Full build guide for educators and hobbyist (in the works!)
  - Fix `HLT` microinstruction, as Logisim currently doesn't play nice with it
  - Implement an optional Clock cycle saving subcircuit to skip to the Instruction if the current control word == 0
  - Split the subcircuits into a Logisim library to be loaded inside other Logisim circuits
