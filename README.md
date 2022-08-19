@@ -2,7 +2,9 @@
 
 ![The CPU](https://i.imgur.com/aIL39s7.png)
 
-This project aims to mimic [Ben Eater's 8-Bit CPU Project](https://eater.net/8bit), in the Digital Logic Simulator [Logisim Evolution](https://github.com/reds-heig/logisim-evolution). 
+This project aims to mimic [Ben Eater's 8-Bit CPU Project](https://eater.net/8bit), in the Digital Logic Simulator Logisim Evolution.
+
+**Note:** *This project was developed in [Logisim Evolution v2.14.6](https://github.com/logisim-evolution/logisim-evolution/releases/tag/v2.14.6), and has only been tested on that version. Any other versions may break the project due to missing or differently sized circuit components.*
 
 A full writeup/guide to replicate this project yourself from scratch may be found in the `CPU v1.XX.pdf` file in the root of this repository.
 
